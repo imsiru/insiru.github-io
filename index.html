@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIRU, THE CUTEST</title>
+  <link rel="stylesheet" href="style.css?v=1.0.5" />
+  <link rel="icon" href="menu.ico" type="image/x-icon" />
+</head>
+<body>
+
+  <!-- 네비게이션 바가 삽입될 부분 -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- 소개 섹션 -->
+  <section class="intro-section">
+    <div class="intro-container">
+      <div class="spacer"></div>
+
+      <h1 class="subheading" id="animatedText">멍멍멍멍멍멍멍</h1>
+      <img src="PIC/main/1.png" alt="시루 귀여운 사진" class="intro-banner" />
+      <div class="intro-text">
+        <h2>시루의 하루: 자고 먹고 사고침</h2>
+        <p>
+          세상 제일 똑똑하고 제일 귀엽고 제일 말 안듣는<br/>
+          우리 집 댕댕이 <strong>시루</strong>를 소개합니다! 🐾
+        </p>
+        <table class="dog-specs">
+          <tr><th>이름</th><td>안시루</td></tr>
+          <tr><th>견종</th><td>말티푸</td></tr>
+          <tr><th>체고</th><td>15 cm</td></tr>
+          <tr><th>체장</th><td>26 cm (유동적)</td></tr>
+          <tr><th>꼬리길이 (털 포함)</th><td>10 cm</td></tr>
+          <tr><th>몸무게</th><td>1.93 kg</td></tr>
+          <tr><th>탄생일</th><td>2025.02.08</td></tr>
+          <tr><th>안씨 합류일</th><td>2025.07.09</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 인스타 섹션 -->
+  <section class="instagram-section">
+    <h4>Follow Me On Instagram</h4>
+    <div class="instagram-link">
+      <a href="https://www.instagram.com/siru_ahn_" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram"/>
+        <span>siru_ahn_</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <p>&copy; 2025 SIRU. All rights reserved 🐶</p>
+  </footer>
+
+  <!-- 메뉴 토글 스크립트 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("navbar.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("navbar-placeholder").innerHTML = html;
+          const toggle = document.getElementById("menuToggle");
+          const overlay = document.getElementById("overlay");
+          if (!toggle || !overlay) return;
+          let isMenuOpen = false;
+          toggle.addEventListener("click", () => {
+            overlay.classList.toggle("hidden");
+            isMenuOpen = !isMenuOpen;
+          });
+          overlay.addEventListener("click", e => {
+            if (e.target === overlay) {
+              overlay.classList.add("hidden");
+              isMenuOpen = false;
+            }
+          });
+        });
+    });
+
+    /* 애니메이션 텍스트 스크립트 */
+    const original = "멍멍멍멍멍멍멍";
+    const target =      "WELCOME";
+    const element = document.getElementById("animatedText");
+
+    setTimeout(() => {
+      let index = 0;
+      const interval = setInterval(() => {
+        const arr = element.textContent.split("");
+        arr[index] = target[index];
+        element.textContent = arr.join("");
+        if (++index >= target.length) clearInterval(interval);
+      }, 300);
+    }, 2000);
+  </script>
+
+</body>
+</html>

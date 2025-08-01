@@ -1,0 +1,50 @@
+<!-- diary.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔹 네비게이션 바 자리 -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- 🔹 본문 -->
+  <main>
+    <h2>📅 DIARY</h2>
+    <div id="calendar"></div>
+  </main>
+
+  <!-- 🔹 달력 로직 -->
+  <script src="calendar.js"></script>
+
+  <!-- 🔹 메뉴바 로드 + 햄버거 동작 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("navbar.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("navbar-placeholder").innerHTML = html;
+
+          const toggle = document.getElementById("menuToggle");
+          const overlay = document.getElementById("overlay");
+
+          // 햄버거 클릭 시 메뉴 열기/닫기
+          toggle.addEventListener("click", () => {
+            overlay.classList.toggle("hidden");
+          });
+
+          // 바깥 클릭 시 메뉴 닫기
+          overlay.addEventListener("click", (e) => {
+            if (e.target === overlay) {
+              overlay.classList.add("hidden");
+            }
+          });
+        });
+    });
+  </script>
+
+</body>
+</html>

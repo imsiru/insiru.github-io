@@ -1,0 +1,208 @@
+{
+  "account_number": null,
+  "accounting_entry_type": "debit",
+  "balance": null,
+  "barcodes": [],
+  "bill_to": {
+    "address": null,
+    "email": null,
+    "name": null,
+    "parsed_address": null,
+    "phone_number": null,
+    "reg_number": null,
+    "vat_number": null
+  },
+  "cashback": null,
+  "category": null,
+  "country_code": null,
+  "created_date": "2025-08-01 10:40:35",
+  "currency_code": "USD",
+  "custom_fields": {},
+  "date": "2025-08-01 10:40:35",
+  "default_category": null,
+  "delivery_date": null,
+  "delivery_note_number": null,
+  "discount": null,
+  "document_reference_number": null,
+  "document_title": null,
+  "document_type": null,
+  "due_date": null,
+  "duplicate_of": null,
+  "exch_rate": 1,
+  "external_id": null,
+  "final_balance": null,
+  "guest_count": null,
+  "id": 336720940,
+  "img_blur": false,
+  "img_file_name": "336720940.png",
+  "img_thumbnail_url": "https://scdn.veryfi.com/receipts/a97b60d6266cfadf/2192f2cc-c386-4cc9-99eb-b28b7bb9ac69/thumbnail.png?Expires=1754048438&Signature=UiuV4L~1~ZkB6YcmJKmHjibOYOeSDW~pW5uPTmPvx6tooeCaRUZQ2O4qpltaIDpfsHeR68zKLWEzwJy0OCoa~Jdeypk19f5mFFz0NTMPYgX5civJWMAr63qYzPA8Ci0gDHUzrfVuLssTQsX6DimuavOa3Q8rA1swnDGpaUe3Mgi61BZXBoZgmA9nvQVcZLrQSBKAjNhnWkAYhAug5SYPAP9aW8~dlVxZiaOpw8B8dr2VJYrJjz3OlHVb3imPNqxz1qGcyte94sd7-16WfbZh1gQnyMnTTp0ZaEfj6IPR5bYtnpW41iwW5xf54MfVjANaKOZmYw6JxAjlFKU9KKEwDA__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ",
+  "img_url": "https://scdn.veryfi.com/receipts/a97b60d6266cfadf/2192f2cc-c386-4cc9-99eb-b28b7bb9ac69/cbb4cfdb-a0b3-4122-9653-b3588f04c409.png?Expires=1754048438&Signature=NYk6o6yVZE3EZ1aHI4UDtkwmE8L2a7ZK9m4cFXUl2cG7C1kJiyegmtMKE0fwpzw6BUkiWyWXQ8OU9E~R-2prkkpZlaOTv88JheMV-Sj-MikSgpu6bofZF1i6iGJPhDVeGTWxg54hSwljsGrwyKXxgL5SbkUZf8G~bWg9ATWZsFeDsydtAVfTMd2Mg4MZwpQUrcPN3MgwD5CLFoH0JJbfLBDaSaxdPZwFb5f2GSbUjv-gA0Wz0jOw6uOFEiOvPfa8sb3UGRKgFtt0ml31wX5zcsbVXAkd9Bg30CvOJyK94Ensl9QnhijzS74PtOyY6C1OfkHKscNWXR5XCyLironezw__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ",
+  "incoterms": null,
+  "insurance": null,
+  "invoice_number": null,
+  "is_approved": false,
+  "is_blurry": [
+    false
+  ],
+  "is_document": false,
+  "is_duplicate": false,
+  "is_money_in": null,
+  "is_transaction": null,
+  "license_plate_number": null,
+  "line_items": [],
+  "meta": {
+    "device_id": null,
+    "device_user_uuid": null,
+    "duplicates": [],
+    "fraud": {
+      "attribution": null,
+      "color": "green",
+      "decision": "Not Fraud",
+      "fraudulent_pdf": {
+        "score": 0
+      },
+      "images": [
+        {
+          "is_lcd": false,
+          "score": 0.95
+        }
+      ],
+      "pages": [
+        {
+          "is_lcd": {
+            "score": 0.95,
+            "value": false
+          }
+        }
+      ],
+      "score": 0.05,
+      "submissions": {},
+      "types": [],
+      "version": null
+    },
+    "fraud_review": {
+      "decision": null,
+      "types": []
+    },
+    "language": [],
+    "ocr_score": null,
+    "owner": "api_demo",
+    "pages": [
+      {
+        "height": 365,
+        "is_blurry": {
+          "score": 0.58,
+          "value": false
+        },
+        "language": [],
+        "screenshot": {
+          "score": 0.86,
+          "type": "other_screenshot"
+        },
+        "width": 662
+      }
+    ],
+    "processed_pages": 1,
+    "source": "api",
+    "source_documents": [
+      {
+        "exif": {
+          "BitDepth": 8,
+          "ColorType": 6,
+          "Compression": 0,
+          "Filter": 0,
+          "ImageHeight": 365,
+          "ImageSize": "662 365",
+          "ImageWidth": 662,
+          "Interlace": 0,
+          "Megapixels": 0.24163,
+          "SRGBRendering": 0
+        },
+        "height": 365,
+        "size_kb": 79,
+        "width": 662
+      }
+    ],
+    "total_pages": 1,
+    "warnings": []
+  },
+  "model": null,
+  "notes": null,
+  "ocr_text": "",
+  "order_date": null,
+  "payment": {
+    "card_number": null,
+    "display_name": null,
+    "terms": null,
+    "type": null
+  },
+  "payment_links": [],
+  "pdf_url": "https://scdn.veryfi.com/receipts/a97b60d6266cfadf/2192f2cc-c386-4cc9-99eb-b28b7bb9ac69/6d0cdce8-faf7-4da3-93d2-133b6979733f.pdf?Expires=1754048438&Signature=NSo7f4sbGOKNKj0kvx-~RKQzjhfFJUWlxVbEBW8h30mRQblWVEcWKG4cK7~Ge5DMl6jNGfh~K~W608V8mzs6GhlmU5c8sWNa3ss4zuyULVTFcKC0aIhSsi98UqdmVfASvixYn6WWXozCS1uH2mxMmS9GE~vwdIcdir-U7vdUJfosDJs9wu9xmVpEu~PoeGnNt5Upc2uBk~x15T3J7NP5How8IRArWfFqoFYHwoOTj1QJCCNWMaTA65J81cyEIov~BrHZDi4LZYVJjgoYiehYkm4bXRv~cH5Pa-15dD4Jrmm~awBV~RJDi60I2-EEwfuJs74bIiNWw8SofxzodOUJYQ__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ",
+  "previous_balance": null,
+  "purchase_order_number": null,
+  "reference_number": "VDBIH-20940",
+  "rounding": null,
+  "server_name": null,
+  "service_end_date": null,
+  "service_start_date": null,
+  "ship_date": null,
+  "ship_to": {
+    "address": null,
+    "name": null,
+    "parsed_address": null
+  },
+  "shipping": null,
+  "status": "processed",
+  "store_number": null,
+  "subtotal": null,
+  "tags": [],
+  "tax": null,
+  "tax_lines": [],
+  "tip": null,
+  "total": null,
+  "total_pages": 1,
+  "total_quantity": null,
+  "total_weight": null,
+  "tracking_number": null,
+  "tracking_numbers": [],
+  "updated_date": "2025-08-01 10:40:38",
+  "vending_person": null,
+  "vending_person_number": null,
+  "vendor": {
+    "abn_number": null,
+    "account_currency": null,
+    "account_number": null,
+    "address": null,
+    "bank_breakdown": [],
+    "bank_name": null,
+    "bank_number": null,
+    "bank_swift": null,
+    "biller_code": null,
+    "category": null,
+    "country_code": null,
+    "email": null,
+    "external_id": null,
+    "external_ids": [],
+    "fax_number": null,
+    "iban": null,
+    "lat": null,
+    "lng": null,
+    "logo": null,
+    "logo_name": null,
+    "map_url": null,
+    "name": null,
+    "order_number": null,
+    "parsed_address": {},
+    "phone_number": null,
+    "raw_address": null,
+    "raw_name": null,
+    "reg_number": null,
+    "type": null,
+    "vat_number": null,
+    "web": null
+  },
+  "vendors": [],
+  "vin_number": null,
+  "warnings": [],
+  "weights": []
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guest Book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔹 네비게이션 -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- 🔹 본문 -->
+  <main>
+    <h2>📖 GUEST BOOK</h2>
+    <form>
+      <input type="text" placeholder="Enter your name" required />
+      <input type="password" maxlength="4" placeholder="Enter 4-digit password" required />
+      <textarea maxlength="200" placeholder="Share your thoughts..."></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="card">
+      <p><strong>Sarah Chen</strong> – “Thank you for sharing your memories!”</p>
+    </div>
+  </main>
+
+  <!-- 🔹 메뉴 기능 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("navbar.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("navbar-placeholder").innerHTML = html;
+
+          const toggle = document.getElementById("menuToggle");
+          const overlay = document.getElementById("overlay");
+
+          toggle.addEventListener("click", () => {
+            overlay.classList.toggle("hidden");
+          });
+
+          overlay.addEventListener("click", (e) => {
+            if (e.target === overlay) {
+              overlay.classList.add("hidden");
+            }
+          });
+        });
+    });
+  </script>
+
+</body>
+</html>

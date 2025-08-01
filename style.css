@@ -1,0 +1,376 @@
+/* ✅ 웹폰트 정의 */
+@font-face {
+  font-family: 'intelone-mono-font-family-italic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cafe24Meongi-W-v1.0';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-B-v1.0.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Meongi';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-W-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro-text h2 {
+  margin-top: 0.5rem; /* 이미지 아래 여백 줄이기 */
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-family: 'MonoplexKR-Regular', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  transform: scaleY(0.95);
+}
+
+/* ✅ 공통 설정 */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #fff8cc, #ffffff); /* 파스텔 노랑 → 흰색 */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #2c3e50;
+  text-align: center;
+}
+
+
+a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+main {
+  padding: 4rem 1rem;
+}
+
+/* ✅ 네비게이션 바 */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px; /* 💡 고정 높이 (모바일에 맞춤) */
+  padding: 0 1rem;
+  background: #ccf2ff;
+  background-color: #ccf2ff; /* 배경 이미지 투명한 영역 보완 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* ✅ 로고 */
+.logo {
+  font-family: 'Cafe24Meongi-W-v1.0', sans-serif !important;
+  font-size: 2rem;              /* ⬆ 더 크게 */
+  margin-left: 0.2rem;            /* ⬅ 살짝 우측으로 이동 */
+  color: #2c3e50;
+  transform: scaleX(0.8) scaleY(0.95); 
+  letter-spacing: -0.5px;
+}
+
+/* ✅ 햄버거 아이콘 */
+.hamburger {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+
+.lottie-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* ✅ 오버레이 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.menu-button img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+/* ✅ 메뉴 패널 */
+.menu-panel {
+  background-color: white;
+  width: 50%;
+  max-width: 300px;
+  height: 100%;
+  padding: 5.5rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ 메뉴 항목 */
+.menu-panel a {
+  font-family: 'intelone-mono-font-family-italic', sans-serif !important;
+  font-size: 1.1rem;
+  transform: scaleY(0.95);
+  letter-spacing: -0.5px;
+}
+
+#menuToggle {
+  background: none;
+  border: none;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menuToggle img {
+  width: auto;   /* 기존 24px에서 키움 */
+  height: 40px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+
+/* ✅ 숨김 처리 */
+.hidden {
+  display: none;
+}
+
+/* ✅ 카드 */
+.card {
+  background: #ffeef2;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+/* ✅ 입력/버튼 */
+input, textarea {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 300px;
+}
+
+button {
+  background-color: orange;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 🔸 메인 소개 섹션 스타일 */
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+/* 🔹 이미지 영역 */
+.intro-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔹 텍스트 영역 */
+.intro-section {
+  padding: 3rem 1rem;
+}
+
+.intro-container {
+  font-family: 'S-CoreDream-3Light', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.intro-image {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.intro-text {
+  max-width: 400px;
+  text-align: left;
+  font-family: 'S-CoreDream-3Light', sans-serif;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+.intro-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.dog-specs {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  border-spacing: 0;
+}
+
+.dog-specs th,
+.dog-specs td {
+  text-align: left;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  white-space: nowrap;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.25); /* ✨ 은은한 점선 */
+}
+
+.dog-specs tr:last-child th,
+.dog-specs tr:last-child td {
+  border-bottom: none; /* 마지막 행 모두 선 제거 */
+}
+
+.dog-specs th {
+  font-weight: 600;
+  color: #555;             /* 살짝 짙게 */
+  min-width: 130px;        /* 줄바꿈 방지 넓이 확보 */
+  width: 35%;
+}
+
+
+.instagram-section {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.instagram-section h4 {
+  font-family: 'S-CoreDream-3Light', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #2c3e50;
+  letter-spacing: 0.3px;
+}
+
+
+.instagram-link {
+  margin-top: 0;     /* 제목과 링크 사이 간격 제거 */
+  line-height: 1;
+}
+
+.instagram-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem; /* ✨ 거의 붙임 */
+  font-size: 1rem;
+  font-family: 'S-CoreDream-3Light', sans-serif;
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.instagram-link img {
+  width: 14px;
+  height: 14px;
+  transform: translateY(1px); /* ⬆ 텍스트 기준선 맞춤 */
+  margin-right: 0rem;
+}
+
+.subheading {
+  font-family: 'Cafe24Meongi', sans-serif !important;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.spacer {
+  height: 2.5rem;
+}
+
+.intro-banner {
+  max-width: 90%;
+  height: auto;
+  margin-top: 0.3rem;    /* 글씨와 이미지 사이 줄이기 */
+  margin-bottom: 0.5rem; /* 이미지와 제목 사이 줄이기 */
+  display: block;
+  border-radius: 12px;
+}
+
+#animatedText {
+  font-family: 'S-CoreDream-3Ligh', sans-serif;
+}
+
+.footer {    
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #999;
+  background: none;
+  font-family: 'intelone-mono-font-family-italic', sans-serif;
+}

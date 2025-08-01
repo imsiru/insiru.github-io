@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔹 네비게이션 바 -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- 🔹 본문 -->
+  <main>
+    <h2>🖼 GALLERY</h2>
+    <div class="card" style="background:#dceeff">
+      <p><strong>Morning Sunrise</strong></p>
+      <p>📅 January 15, 2024</p>
+      <p>A breathtaking sunrise captured from the balcony</p>
+    </div>
+  </main>
+
+  <!-- 🔹 햄버거 메뉴 동작 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("navbar.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("navbar-placeholder").innerHTML = html;
+
+          const toggle = document.getElementById("menuToggle");
+          const overlay = document.getElementById("overlay");
+
+          toggle.addEventListener("click", () => {
+            overlay.classList.toggle("hidden");
+          });
+
+          overlay.addEventListener("click", (e) => {
+            if (e.target === overlay) {
+              overlay.classList.add("hidden");
+            }
+          });
+        });
+    });
+  </script>
+
+</body>
+</html>
